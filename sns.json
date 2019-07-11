@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:ap-northeast-1:244450471837:pal-aggregation:daab5112-305a-406c-b1f8-eb2572f66d72",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "3858e740-70ae-5cee-a08b-b2df90ad32ba",
+        "TopicArn": "arn:aws:sns:ap-northeast-1:244450471837:pal-aggregation",
+        "Subject": null,
+        "Message": "{\"version\":\"0\",\"id\":\"b8512249-4bb7-0fb5-1477-11aeb39f19ec\",\"detail-type\":\"Batch Job State Change\",\"source\":\"aws.batch\",\"account\":\"244450471837\",\"time\":\"2019-07-10T12:44:51Z\",\"region\":\"ap-northeast-1\",\"resources\":[\"arn:aws:batch:ap-northeast-1:244450471837:job/aaf74850-70be-4d17-a00e-e7fbad705350\"],\"detail\":{\"jobName\":\"fail-2132\",\"jobId\":\"aaf74850-70be-4d17-a00e-e7fbad705350\",\"jobQueue\":\"arn:aws:batch:ap-northeast-1:244450471837:job-queue/first-run-job-queue\",\"status\":\"FAILED\",\"attempts\":[{\"container\":{\"containerInstanceArn\":\"arn:aws:ecs:ap-northeast-1:244450471837:container-instance/9fcbc5f2-b235-4403-8031-fe4c94fadde8\",\"taskArn\":\"arn:aws:ecs:ap-northeast-1:244450471837:task/1754a46b-4f0b-441e-8e10-834c520e2e7b\",\"exitCode\":137,\"reason\":\"OutOfMemoryError: Container killed due to memory usage\",\"logStreamName\":\"pal-aggregation-job/default/1754a46b-4f0b-441e-8e10-834c520e2e7b\",\"networkInterfaces\":[]},\"startedAt\":1562761942775,\"stoppedAt\":1562762690295,\"statusReason\":\"Essential container in task exited\"}],\"statusReason\":\"Essential container in task exited\",\"createdAt\":1562761931787,\"startedAt\":1562761942775,\"stoppedAt\":1562762690295,\"dependsOn\":[],\"jobDefinition\":\"arn:aws:batch:ap-northeast-1:244450471837:job-definition/pal-aggregation-job:8\",\"parameters\":{},\"container\":{\"image\":\"244450471837.dkr.ecr.ap-northeast-1.amazonaws.com/pal-aggregation:integration\",\"vcpus\":2,\"memory\":128,\"command\":[],\"jobRoleArn\":\"pal-aggregation-role\",\"volumes\":[],\"environment\":[{\"name\":\"SLACK_CHANNEL\",\"value\":\"batch-stg\"},{\"name\":\"AWS_REGION\",\"value\":\"ap-northeast-1\"},{\"name\":\"API_KEY\",\"value\":\"0hfaFrzrmzLbvVB1ONwXTw9QU9vXYaNVJcU88WkY\"},{\"name\":\"ENV\",\"value\":\"integration\"},{\"name\":\"BASE_URL\",\"value\":\"https://redash.stg.csmobile.io\"},{\"name\":\"BUCKET_NAME\",\"value\":\"pal-aggregation-integration\"},{\"name\":\"SLACK_WEBHOOK_URL\",\"value\":\"https://hooks.slack.com/services/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\"}],\"mountPoints\":[],\"ulimits\":[],\"exitCode\":137,\"reason\":\"OutOfMemoryError: Container killed due to memory usage\",\"containerInstanceArn\":\"arn:aws:ecs:ap-northeast-1:244450471837:container-instance/9fcbc5f2-b235-4403-8031-fe4c94fadde8\",\"taskArn\":\"arn:aws:ecs:ap-northeast-1:244450471837:task/1754a46b-4f0b-441e-8e10-834c520e2e7b\",\"logStreamName\":\"pal-aggregation-job/default/1754a46b-4f0b-441e-8e10-834c520e2e7b\",\"networkInterfaces\":[],\"resourceRequirements\":[]}}}",
+        "Timestamp": "2019-07-10T12:44:51.779Z",
+        "SignatureVersion": "1",
+        "Signature": "BiYBgd+milaC3R+cQ8Xb/VHi1yJsaR0L4Fb4sBSe2SxMr2IB3F9cIOypP2KWgnlvs8YmWYwQ6WREQ1lK36Wzk+XVuALrQVhH7oxIOST60AtVWHIayVGrnZQnJhuPfDzPA5aKp4+2Raih51zXRuK+wPNfimd4h4XYHVIurzW+EmUXohwlLWrcshwVcd/nOezJXKrW3S9grlHRzTvxU3yLK5BuhBTfhCYGH1AWbnoCjdIC0VbjIEK+bVToyfCcKhX9mb0WAw9BJOOxDEP/hkAiEchjQbPHqSMrEB69MgmvVqiWU1oV/M4GTpQKNtH3lwqw9LZbR8JHF7XyMbM5FMMevw==",
+        "SigningCertUrl": "https://sns.ap-northeast-1.amazonaws.com/SimpleNotificationService-6aad65c2f9911b05cd53efda11f913f9.pem",
+        "UnsubscribeUrl": "https://sns.ap-northeast-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:ap-northeast-1:244450471837:pal-aggregation:daab5112-305a-406c-b1f8-eb2572f66d72",
+        "MessageAttributes": {
+        }
+      }
+    }
+  ]
+}
